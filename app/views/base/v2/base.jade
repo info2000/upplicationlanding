@@ -24,7 +24,7 @@ html.no-js(lang='#{lang}', data-lang="#{lang}")
         meta(name='author', content='Upplication Software Technologies, S.L.')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         meta(name='msapplication-TileColor', content='#00a300')
-        meta(name='msapplication-TileImage', content='#{localConfig.base_path}/images/favicon/mstile-144x144.png')
+        meta(name='msapplication-TileImage', content='/images/favicon/mstile-144x144.png')
         meta(name='theme-color', content='#ffffff')
         meta(name='google-site-verification', content='#{localConfig.webmaster_token}')
 
@@ -44,16 +44,16 @@ html.no-js(lang='#{lang}', data-lang="#{lang}")
             link(rel='canonical', href="#{routing[_template][lang]}")
 
         //- FAVICON
-        link(rel="shortcut icon", href="#{localConfig.base_path}/images/favicon/favicon-32x32.png")
-        link(rel="apple-touch-icon", sizes="180x180", href='#{localConfig.base_path}/images/favicon/apple-touch-icon.png')
-        link(rel="icon", type="image/png", href='#{localConfig.base_path}/images/favicon/favicon-32x32.png', sizes="32x32")
-        link(rel="icon", type="image/png", href='#{localConfig.base_path}/images/favicon/favicon-16x16.png', sizes="16x16")
-        link(rel="manifest", href='#{localConfig.base_path}/images/favicon/manifest.json')
-        link(rel="mask-icon", href='#{localConfig.base_path}/images/favicon/safari-pinned-tab.svg', color="#00c86b")
+        link(rel="shortcut icon", href="/images/favicon/favicon-32x32.png")
+        link(rel="apple-touch-icon", sizes="180x180", href='/images/favicon/apple-touch-icon.png')
+        link(rel="icon", type="image/png", href='/images/favicon/favicon-32x32.png', sizes="32x32")
+        link(rel="icon", type="image/png", href='/images/favicon/favicon-16x16.png', sizes="16x16")
+        link(rel="manifest", href='/images/favicon/manifest.json')
+        link(rel="mask-icon", href='/images/favicon/safari-pinned-tab.svg', color="#00c86b")
         meta(name="theme-color", content="#ffffff")
 
         //- CSS files
-        link(rel='stylesheet', href='#{localConfig.base_path}/styles/vendor/base.css')
+        link(rel='stylesheet', href='/styles/vendor/base.css')
 
         block css
 
@@ -65,10 +65,10 @@ html.no-js(lang='#{lang}', data-lang="#{lang}")
                 .container
                     .logo
                         a(href='#{header.logo.url}', alt='#{header.logo.title}')
-                            img(src='#{localConfig.base_path}/images/home/icons/upplication.svg', title='#{header.logo.title}')
+                            img(src='/images/home/icons/upplication.svg', title='#{header.logo.title}')
                     //- XMAS LOGO version
                         a(href='#{header.logo.url}', alt='#{header.logo.title_xmas}')
-                            img(src='#{localConfig.base_path}/images/home/icons/upplication_xmas.svg', title='#{header.logo.title_xmas}')
+                            img(src='/images/home/icons/upplication_xmas.svg', title='#{header.logo.title_xmas}')
                     nav.top-nav
                         ul.top-nav-list.hide-ul
                             li.how
@@ -162,8 +162,8 @@ html.no-js(lang='#{lang}', data-lang="#{lang}")
 
 
 
-        script(type="text/javascript", src='#{localConfig.base_path}/scripts/vendor/base.js')
-        script(type="text/javascript", src='#{localConfig.base_path}/scripts/main.js')
+        script(type="text/javascript", src='/scripts/vendor/base.js')
+        script(type="text/javascript", src='/scripts/main.js')
 
         //- end scripts
         script(type='text/javascript').
