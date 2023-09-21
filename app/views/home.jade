@@ -7,7 +7,7 @@ block vars
     - var cssClass = 'home'
 
 block css
-    link(rel='stylesheet', href='#{localConfig.base_path}/styles/home/home.css')
+    link(rel='stylesheet', href='/styles/home/home.css')
 
 block content
 
@@ -20,13 +20,13 @@ block content
             h1 !{home.slider.intro2}
         ul.slides
             li
-                img(src='#{localConfig.base_path}/images/home/bg/bgpymes.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
+                img(src='/images/home/bg/bgpymes.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bgcoffeeshop.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bgcoffeeshop.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bgservices.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bgservices.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bgbarbershop.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bgbarbershop.jpg', alt='#{home.slider.bg}', title='#{home.slider.bg}')
         .dippah.skew-right
 
     //- (...) REGISTER PANEL :: "15 days free trial" (DESKTOP - LAPTOP)
@@ -38,15 +38,15 @@ block content
             .row.features-grids.center-align(data-aos='zoom-in')
                 .col.s12.m4
                     .features-grid.center-img
-                        img.img-responsive(src='#{localConfig.base_path}/images/home/icons/rise.svg', alt='#{home.why.img.grow}', title='#{home.why.img.grow}')
+                        img.img-responsive(src='/images/home/icons/rise.svg', alt='#{home.why.img.grow}', title='#{home.why.img.grow}')
                         h3 !{home.why.grow}
                 .col.s12.m4
                     .features-grid.center-img
-                        img.img-responsive(src='#{localConfig.base_path}/images/home/icons/loyal.svg', alt='#{home.why.img.loyal}', title='#{home.why.img.loyal}')
+                        img.img-responsive(src='/images/home/icons/loyal.svg', alt='#{home.why.img.loyal}', title='#{home.why.img.loyal}')
                         h3 !{home.why.loyal}
                 .col.s12.m4
                     .features-grid.center-img
-                        img.img-responsive(src='#{localConfig.base_path}/images/home/icons/rocket.svg', alt='#{home.why.img.others}', title='#{home.why.img.others}')
+                        img.img-responsive(src='/images/home/icons/rocket.svg', alt='#{home.why.img.others}', title='#{home.why.img.others}')
                         h3 !{home.why.others}
                 .clearfix
 
@@ -70,7 +70,7 @@ block content
                     h4.headTitles !{home.pwa.maintitle}
             .row.pwa-text
                 .col.s12.m3(data-aos='fade-right')
-                    img.img-responsive(src='#{localConfig.base_path}/images/pwa/pwa-how-to-install-in-safari-ios.png', alt='#{home.pwa.ios}', title='#{home.pwa.ios}')
+                    img.img-responsive(src='/images/pwa/pwa-how-to-install-in-safari-ios.png', alt='#{home.pwa.ios}', title='#{home.pwa.ios}')
                 .col.s12.m6(data-aos='zoom-in')
                     //- for each loop to load all copies in "locales" json file/s
                     each alltips, i in home.pwa.tips
@@ -81,7 +81,7 @@ block content
                             i.icon.icon-plus.left
                             | #{home.pwa.btn}
                 .col.s12.m3(data-aos='fade-left')
-                    img.img-responsive(src='#{localConfig.base_path}/images/pwa/pwa-how-to-install-in-chrome-android.png', alt='#{home.pwa.android}', title='#{home.pwa.android}')
+                    img.img-responsive(src='/images/pwa/pwa-how-to-install-in-chrome-android.png', alt='#{home.pwa.android}', title='#{home.pwa.android}')
 
     //- (7) HOW I MADE MY OWN APP in 4 Steps
     section#timeline.timeline-section.scrollspy
@@ -94,7 +94,7 @@ block content
                     ul.timeline
                         li.step1
                             .timeline-image
-                                img.img-responsive.imgFlash(src='#{localConfig.base_path}/images/home/timeline/sign-up.svg', alt='#{home.how.how_one.reg_step1}', title='#{home.how.how_one.reg_step1}')
+                                img.img-responsive.imgFlash(src='/images/home/timeline/sign-up.svg', alt='#{home.how.how_one.reg_step1}', title='#{home.how.how_one.reg_step1}')
                             .timeline-panel(data-aos='flip-up')
                                 .timeline-heading
                                     h4.subheading
@@ -110,7 +110,7 @@ block content
                                             i.icon.icon-left
                         li.timeline-inverted.step3
                             .timeline-image
-                                img.img-circle.img-responsive.imgFlash(src='#{localConfig.base_path}/images/home/timeline/personal-tutor.svg', alt='#{home.how.how_three.tutor_step1}', title='#{home.how.how_three.tutor_step1}')
+                                img.img-circle.img-responsive.imgFlash(src='/images/home/timeline/personal-tutor.svg', alt='#{home.how.how_three.tutor_step1}', title='#{home.how.how_three.tutor_step1}')
                             .timeline-panel(data-aos='flip-down')
                                 .timeline-heading
                                     h4.subheading
@@ -120,7 +120,7 @@ block content
                                     p.text-muted !{home.how.how_three.tutor_step2}
                         li.step2
                             .timeline-image
-                                img.img-responsive.imgFlash(src='#{localConfig.base_path}/images/home/timeline/create-your-app.svg', alt='#{home.how.how_two.app_step1}', title='#{home.how.how_two.app_step1}')
+                                img.img-responsive.imgFlash(src='/images/home/timeline/create-your-app.svg', alt='#{home.how.how_two.app_step1}', title='#{home.how.how_two.app_step1}')
                             .timeline-panel(data-aos='flip-up')
                                 .timeline-heading
                                     h4.subheading
@@ -131,7 +131,7 @@ block content
                                     p.text-muted !{home.how.how_two.app_step3}
                         li.timeline-inverted.step4
                             .timeline-image
-                                img.img-responsive.imgFlash(src='#{localConfig.base_path}/images/home/timeline/we-publish-your-app.png', alt='#{home.how.how_four.publish_step1}', title='#{home.how.how_four.publish_step1}')
+                                img.img-responsive.imgFlash(src='/images/home/timeline/we-publish-your-app.png', alt='#{home.how.how_four.publish_step1}', title='#{home.how.how_four.publish_step1}')
                             .timeline-panel(data-aos='flip-down')
                                 .timeline-heading
                                     h4.subheading
@@ -150,15 +150,15 @@ block content
             h4 #{home.slider.appready.title}
         ul.slides
             li
-                img(src='#{localConfig.base_path}/images/home/bg/bg_01.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
+                img(src='/images/home/bg/bg_01.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bg_02.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bg_02.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bg_03.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bg_03.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bg_04.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bg_04.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
             li
-                img(src="#{localConfig.base_path}/images/common/pixel.jpg", data-src='#{localConfig.base_path}/images/home/bg/bg_05.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
+                img(src="/images/common/pixel.jpg", data-src='/images/home/bg/bg_05.jpg', alt='#{home.slider.appready.bg}', title='#{home.slider.appready.bg}')
 
     //- (9) CLIENTS :: new testimonial area
     include includes/testimonials
@@ -182,7 +182,7 @@ block scripts
         });
 
     //- TYPED PLUGIN JS
-    script(type="text/javascript", src='#{localConfig.base_path}/bower_components/typed.js/dist/typed.min.js')
+    script(type="text/javascript", src='/bower_components/typed.js/dist/typed.min.js')
     script(type='text/javascript').
         $(function () {
             $(".element").typed({
