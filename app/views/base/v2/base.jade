@@ -30,7 +30,7 @@ html.no-js(lang='#{lang}', data-lang="#{lang}")
 
         include ../scripts
         include ../tagmanager-head
-        include ../newrelic
+        
 
         each lang in langs.codes
             if routing[_template][lang.language_country].indexOf("http") != 0
